@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate File Remover - Reclaim Your Storage</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #495057;
+        }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            padding-left: 20px;
+        }
+        .features li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .terminal {
+            background: #1e1e1e;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 700px;
+        }
+        .terminal .actions {
+            margin-top: 15px;
+        }
+        .actions button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .actions button:hover {
+            background: #0056b3;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            width: 100%;
+            background: #343a40;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>Duplicate File Remover - Reclaim Your Storage</header>
+    <div class="usage-steps" style="margin-top: 30px; max-width: 800px; text-align: center;">
+            <h2 style="font-size: 2em; color: #333; margin-bottom: 30px;">How Easy is it to Use?</h2>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="flex: 1; background: #fff; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin: 0 10px;">
+                    <div style="text-align: center;">
+                        <span style="font-size: 2.5em; color: #007bff;">1️⃣</span>
+                    </div>
+                    <h3 style="font-size: 1.5em; color: #2c3e50; margin-top: 10px;">Double Click the Tool</h3>
+                    <p style="font-size: 1em; color: #495057;">Launch the application easily by double clicking.</p>
+                </div>
+                <div style="flex: 1; background: #fff; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin: 0 10px;">
+                    <div style="text-align: center;">
+                        <span style="font-size: 2.5em; color: #007bff;">2️⃣</span>
+                    </div>
+                    <h3 style="font-size: 1.5em; color: #2c3e50; margin-top: 10px;">Press Y</h3>
+                    <p style="font-size: 1em; color: #495057;">Confirm duplicate removal by pressing Y.</p>
+                </div>
+                <div style="flex: 1; background: #fff; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin: 0 10px;">
+                    <div style="text-align: center;">
+                        <span style="font-size: 2.5em; color: #007bff;">3️⃣</span>
+                    </div>
+                    <h3 style="font-size: 1.5em; color: #2c3e50; margin-top: 10px;">Enjoy Your Free Space</h3>
+                    <p style="font-size: 1em; color: #495057;">Quickly see the results and enjoy a cleaner system.</p>
+                </div>
+            </div>
+        </div>
+<button class="btn" style="margin-top: 20px; margin-bottom: 20px;">Buy Now for $100</button>
+        <div class="container">
+        <h1>Tired of Duplicate Photos and Running Out of Space?</h1>
+        <p><strong>Say Goodbye to Cluttered Folders</strong></p>
+        <p>If you've ever connected your phone to your computer and accidentally generated an entire set of duplicate photos (maybe even multiple times), and now your computer is completely out of space, <strong>this is the tool you've been dreaming of</strong>.</p>
+        <p>Our <strong>Duplicate File Remover</strong> makes cleaning up your files simple and effective. With just a few clicks, you can locate and delete unnecessary duplicates, saving you both time and storage space. Plus, there's no need to worry about losing your original files—our intelligent script keeps the originals safe while removing all those extra copies.</p>
+        <p><strong>Reclaim Your Storage, Boost Your Productivity</strong></p>
+        <ul class="features">
+            <li>Enjoy a tidy digital workspace</li>
+            <li>Free up valuable storage space</li>
+            <li>Boost your computer's speed and efficiency</li>
+        </ul>
+        <p>For only <strong>$100</strong>, you can take control of your cluttered folders and start organizing smarter. Get your computer running fast again!</p>
+        <button class="btn">Buy Now for $100</button>
+        
+        <div class="terminal">
+            <p><strong>Duplicate File Remover Pro - Easy Demo</strong></p><pre>
+Scanning for duplicate files...
+Duplicates found: 45
+Total space recoverable: 2.5 GB
+
+[ Y / N ]
+            </pre>
+            <div class="actions">
+                <button onclick="deleteDuplicates()">Y</button>
+                <button onclick="cancelAction()">N</button>
+            </div>
+            <div id="confirmation" style="display:none; color: #00ff00; margin-top: 10px;"></div>
+        </div>
+</div>
+<p style="font-size: 0.9em; color: #777; margin-top: 15px;">Note: This is just a demo of how easy it is to use Duplicate File Remover Pro. To actually remove duplicate files, please purchase the full version.</p>
+        </div>
+
+        <script>
+            function deleteDuplicates() {
+                document.getElementById('confirmation').style.display = 'block';
+                document.getElementById('confirmation').innerText = 'Duplicates deleted successfully. 2.5 GB of space recovered.';
+            }
+            function cancelAction() {
+                document.getElementById('confirmation').style.display = 'block';
+                document.getElementById('confirmation').innerText = 'Operation cancelled. No files were deleted.';
+            }
+        </script>
+<footer>
+            <p>© 2023 Duplicate File Remover. All rights reserved.</p>
+        </footer>
+</body>
+</html>
