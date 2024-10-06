@@ -98,6 +98,50 @@
         .actions button:hover {
             background: #0056b3;
         }
+        .usage-steps {
+            margin-top: 30px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        .step-box {
+            flex: 1;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            min-width: 250px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .steps-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .step-box {
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+        .step-number {
+            text-align: center;
+            font-size: 2.5em;
+            color: #007bff;
+        }
+        .step-title {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+        .step-description {
+            font-size: 1em;
+            color: #495057;
+        }
         footer {
             margin-top: 40px;
             padding: 20px;
@@ -111,34 +155,28 @@
 </head>
 <body>
     <header>Duplicate File Remover - Reclaim Your Storage</header>
-    <div class="usage-steps" style="margin-top: 30px; max-width: 800px; text-align: center;">
-            <h2 style="font-size: 2em; color: #333; margin-bottom: 30px;">How Easy is it to Use?</h2>
-            <div style="display: flex; justify-content: space-between;">
-                <div style="flex: 1; background: #fff; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin: 0 10px;">
-                    <div style="text-align: center;">
-                        <span style="font-size: 2.5em; color: #007bff;">1️⃣</span>
-                    </div>
-                    <h3 style="font-size: 1.5em; color: #2c3e50; margin-top: 10px;">Double Click the Tool</h3>
-                    <p style="font-size: 1em; color: #495057;">Launch the application easily by double clicking.</p>
-                </div>
-                <div style="flex: 1; background: #fff; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin: 0 10px;">
-                    <div style="text-align: center;">
-                        <span style="font-size: 2.5em; color: #007bff;">2️⃣</span>
-                    </div>
-                    <h3 style="font-size: 1.5em; color: #2c3e50; margin-top: 10px;">Press Y</h3>
-                    <p style="font-size: 1em; color: #495057;">Confirm duplicate removal by pressing Y.</p>
-                </div>
-                <div style="flex: 1; background: #fff; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin: 0 10px;">
-                    <div style="text-align: center;">
-                        <span style="font-size: 2.5em; color: #007bff;">3️⃣</span>
-                    </div>
-                    <h3 style="font-size: 1.5em; color: #2c3e50; margin-top: 10px;">Enjoy Your Free Space</h3>
-                    <p style="font-size: 1em; color: #495057;">Quickly see the results and enjoy a cleaner system.</p>
-                </div>
+    <div class="usage-steps">
+        <h2 style="font-size: 2em; color: #333; margin-bottom: 30px;">How Easy is it to Use?</h2>
+        <div class="steps-container">
+            <div class="step-box">
+                <div class="step-number">1️⃣</div>
+                <h3 class="step-title">Double Click the Tool</h3>
+                <p class="step-description">Launch the application easily by double clicking.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-number">2️⃣</div>
+                <h3 class="step-title">Press Y</h3>
+                <p class="step-description">Confirm duplicate removal by pressing Y.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-number">3️⃣</div>
+                <h3 class="step-title">Enjoy Your Free Space</h3>
+                <p class="step-description">Quickly see the results and enjoy a cleaner system.</p>
             </div>
         </div>
-<button class="btn" style="margin-top: 20px; margin-bottom: 20px;">Buy Now for $100</button>
-        <div class="container">
+    </div>
+    <button class="btn" style="margin-top: 20px; margin-bottom: 20px;">Buy Now for $100</button>
+    <div class="container">
         <h1>Tired of Duplicate Photos and Running Out of Space?</h1>
         <p><strong>Say Goodbye to Cluttered Folders</strong></p>
         <p>If you've ever connected your phone to your computer and accidentally generated an entire set of duplicate photos (maybe even multiple times), and now your computer is completely out of space, <strong>this is the tool you've been dreaming of</strong>.</p>
@@ -166,22 +204,20 @@ Total space recoverable: 2.5 GB
             </div>
             <div id="confirmation" style="display:none; color: #00ff00; margin-top: 10px;"></div>
         </div>
-</div>
-<p style="font-size: 0.9em; color: #777; margin-top: 15px;">Note: This is just a demo of how easy it is to use Duplicate File Remover Pro. To actually remove duplicate files, please purchase the full version.</p>
-        </div>
-
-        <script>
-            function deleteDuplicates() {
-                document.getElementById('confirmation').style.display = 'block';
-                document.getElementById('confirmation').innerText = 'Duplicates deleted successfully. 2.5 GB of space recovered.';
-            }
-            function cancelAction() {
-                document.getElementById('confirmation').style.display = 'block';
-                document.getElementById('confirmation').innerText = 'Operation cancelled. No files were deleted.';
-            }
-        </script>
-<footer>
-            <p>© 2023 Duplicate File Remover. All rights reserved.</p>
-        </footer>
+    </div>
+    <p style="font-size: 0.9em; color: #777; margin-top: 15px;">Note: This is just a demo of how easy it is to use Duplicate File Remover Pro. To actually remove duplicate files, please purchase the full version.</p>
+    <script>
+        function deleteDuplicates() {
+            document.getElementById('confirmation').style.display = 'block';
+            document.getElementById('confirmation').innerText = 'Duplicates deleted successfully. 2.5 GB of space recovered.';
+        }
+        function cancelAction() {
+            document.getElementById('confirmation').style.display = 'block';
+            document.getElementById('confirmation').innerText = 'Operation cancelled. No files were deleted.';
+        }
+    </script>
+    <footer>
+        <p>© 2023 Duplicate File Remover. All rights reserved.</p>
+    </footer>
 </body>
 </html>
